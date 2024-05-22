@@ -1,5 +1,7 @@
 $primary-color: #FFD14A;
 
+@use './components/_loder';
+
 *{
   padding: 0;
   margin: 0;
@@ -11,13 +13,7 @@ body {
   overflow: hidden;
 }
 
-.app {
-  height: 100%;
-}
-
+.app,
 .main-container {
   height: 100%;
-
 }
-
-@import url('./components/loder.scss');
