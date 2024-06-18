@@ -1,42 +1,38 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@use './../utils/vars' as v;
+
+.main-content {
+  padding: 12% 0 0 v.$spacing;
+
+  div {
+    animation: main-content 2s ease-in-out 1s;
+
+    h1 {
+      font-size: 50px;
+  
+      line-height: 0.9;
+  
+      span {
+        margin: 35px;
+  
+        font-size: 40px;
+        font-weight: 500;
+      }
+    }
+  
+    p {
+      width: 60%;
+      margin-top: 5%;
+  
+      font-size: 22px;
+    }
+  }
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.app{
-  height: 100%;
-  .main-container {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 20% 50% 30%;
-    grid-template-areas: 
-      "nav      aside"
-      "section  aside"
-      "footer   aside";
-
-    height: inherit;
-
-    nav {
-      grid-area: nav;
-    }
-
-    .main-content {
-      grid-area: section;
-    }
-
-    .footer {
-      grid-area: footer;
-    }
-
-    .side-content {
-      grid-area: aside;
-    }
+@keyframes main-content {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
