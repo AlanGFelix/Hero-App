@@ -1,4 +1,4 @@
-$primary-color: blue;
+@use './../utils/vars' as v;
 
 .loader{
   display: flex;
@@ -20,7 +20,7 @@ $primary-color: blue;
     border-radius: 50%;
     margin: 10px;
     
-    background-color: $primary-color;
+    background-color: v.$primary-color;
     
     animation: scaling 1.2s ease-in-out infinite;
 

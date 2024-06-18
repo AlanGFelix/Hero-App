@@ -1,19 +1,5 @@
-$primary-color: #FFD14A;
-
+@use './utils/fonts';
+@use './utils/vars';
 @use './components/_loder';
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.app,
-.main-container {
-  height: 100%;
-}
+@use './components/nav';
+@use './components/main';

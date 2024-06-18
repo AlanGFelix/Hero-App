@@ -1,0 +1,12 @@
+@mixin makeFont($family, $url, $weight, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url($url);
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include makeFont('Lato', './../fonts/Lato-Light.ttf', 300);
+@include makeFont('Lato', './../fonts/Lato-Regular.ttf', 400);
+@include makeFont('Lato', './../fonts/Lato-Bold.ttf', 700);

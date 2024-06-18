@@ -1,0 +1,55 @@
+@use './../utils/vars' as v;
+
+nav {
+  display: flex;
+  align-items: center;
+
+  padding: 8%;
+
+  .nav__content {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    width: 100%;
+  
+    animation: navbar 2s ease-in-out 1s;
+  
+    img {
+      width: 15%;
+      min-width: 60px;
+      max-width: 100px;
+
+      aspect-ratio: 1;
+    }
+  
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 15%;
+
+      width: 80%;
+  
+      li {
+        list-style: none;
+      }
+  
+      a {
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+  
+        color: v.$font-color;
+      }
+    }
+  }
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
