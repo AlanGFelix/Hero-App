@@ -4,7 +4,7 @@ nav {
   display: flex;
   align-items: center;
 
-  padding: v.$spacing;
+  padding: v.$spacing 0 0 v.$spacing;
 
   .nav__content {
     display: flex;

@@ -2,5 +2,7 @@
 @use './utils/vars';
 @use './components/_loder';
 @use './components/nav';
-@use './components/main';
 @use './components/global';
+@use './components/main';
+@use './components/side';
+@use './components/footer';
