@@ -29,6 +29,10 @@
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
 @keyframes main-content {
   0% {
     transform: translateY(-150%);
